@@ -6,5 +6,8 @@ module.exports = {
   transform: {
     ".+\\.ts$": "ts-jest",
   },
-  maxWorkers: '100%'
+  maxWorkers: '100%',
+  moduleNameMapper: {
+    '@/(.*)': '<rootDir>/src/$1'
+  }
 };
